@@ -1,0 +1,12 @@
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  gh-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: pipe-cd/actions-gh-release@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
