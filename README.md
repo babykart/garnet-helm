@@ -1,8 +1,8 @@
 # garnet
 
-![Version: 0.1.0](https://img.shields.io/badge/Version-0.1.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.10](https://img.shields.io/badge/AppVersion-1.0.10-informational?style=flat-square)
+![Version: 0.1.1](https://img.shields.io/badge/Version-0.1.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 1.0.10](https://img.shields.io/badge/AppVersion-1.0.10-informational?style=flat-square)
 
-A Chart for garnet
+A Helm chart for Microsoft garnet
 
 **Homepage:** <https://github.com/microsoft/garnet>
 
@@ -21,7 +21,7 @@ A Chart for garnet
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | affinity | object | `{}` | Affinity |
-| containers.args | list | `["--port","6379","-m","512m","-i","128m","--password","xxxxxxxxxx"]` | Containers args |
+| containers.args | list | `["--port","6379","-m","512m","-i","128m","--auth","Password","--password","xxxxxxxxxx"]` | Containers args |
 | containers.livenessProbe | object | `{}` | Containers livenessProbe |
 | containers.port | int | `6379` | Containers port |
 | containers.readinessProbe | object | `{}` | Containers livenessProbe |
