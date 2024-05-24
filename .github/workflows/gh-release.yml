@@ -5,6 +5,7 @@ on:
 
 jobs:
   gh-release:
+    name: gh-release
     runs-on: ubuntu-latest
     steps:
       - uses: pipe-cd/actions-gh-release@v2
